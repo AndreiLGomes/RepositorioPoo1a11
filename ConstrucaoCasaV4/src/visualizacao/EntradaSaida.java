@@ -34,6 +34,7 @@ public class EntradaSaida {
 	}
 	
 	public static int solicitarQtdeAberturas(String abertura) {
+		
 		return Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de "+abertura));
 	}
 	
@@ -87,4 +88,7 @@ public class EntradaSaida {
 		JOptionPane.showMessageDialog(null, informacoes, "Informações da casa", JOptionPane.INFORMATION_MESSAGE);
 	}
 
+	public static void msgNao() {
+		JOptionPane.showMessageDialog(null, "A casa não foi feita!");
+	}
 }
